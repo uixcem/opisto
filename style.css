@@ -18,17 +18,18 @@ body::-webkit-scrollbar {
   display: none;
 }
 
-text {
-  fill: rgb(255, 255, 255);
-  font-size: xx-large;
+.map {
+  text-align: center;
 }
 
 svg {
-  display: block;
-  margin: 0 auto;
-  width: 80%;
-  position: relative;
-  bottom: 80px;
+  width: 90%;
+  height: 100%;
+}
+
+text {
+  fill: rgb(255, 255, 255);
+  font-size: xx-large;
 }
 
 .mapdiv path {
@@ -89,28 +90,18 @@ a.st1 :hover path {
 .footer {
   text-align: center;
   font-size: small;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: bold;
   color: rgb(255, 255, 255);
-  display: block;
-  position: absolute;
-  bottom: 0px;
-  margin: 0 auto;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
+  position: fixed;
+  bottom: 10px;
+  left: calc(50% - 158px);
 }
 
 .header {
   text-align: center;
   font-size: 3rem;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bold;
   color: rgb(251, 251, 251);
-  display: block;
-  position: relative;
-  top: 50px;
+  letter-spacing: 3px;
 }
 .navbar {
   display: flex;
@@ -218,6 +209,7 @@ li.alue-text-item:before {
 .main-gif {
   height: auto;
   width: 650px;
+  margin-top: 30px;
 }
 .loading-gif {
   width: 150px;
