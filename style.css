@@ -1,103 +1,136 @@
-body {
-    background: linear-gradient(to bottom, #57c1eb 0%,#246fa8 100%);
-    background-repeat: no-repeat; 
-    
-    
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,700&display=swap');
+
+html {
+  width: 100vh;
+  width: 100vw;
 }
 
+body {
+  background: linear-gradient(to bottom, #57c1eb 0%, #246fa8 100%);
+  background-repeat: no-repeat;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  height: 100vh;
+  width: 100%;
+}
 
-text{
-    fill: rgb(255, 255, 255);
-    font-size: xx-large;
+body::-webkit-scrollbar {
+  display: none;
+}
+
+text {
+  fill: rgb(255, 255, 255);
+  font-size: xx-large;
 }
 
 svg {
-    display: block;
-    margin: 0 auto;
-    width: 80%;
-    position: relative;
-    bottom: 80px;
-  }
-  
-  
-  .mapdiv path {
-    stroke: #8d8d8d;
-    stroke-width: 1px;
-    transition: fill 0.5s;
-  }
-  
-  a.st1 :hover path {
-    fill: rgb(255, 255, 255);
-  }
-  
-  .st :active path {
-    fill: cornflowerblue;
-  }
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+  position: relative;
+  bottom: 80px;
+}
 
+.mapdiv path {
+  stroke: #8d8d8d;
+  stroke-width: 1px;
+  transition: fill 0.5s;
+}
 
+a.st1 :hover path {
+  fill: rgb(255, 255, 255);
+}
 
-.st0{fill:#3F2CC3;}
-	.st1{fill:#FF4AC9;}
-	.st2{fill:#002e57;}
-	.st3{fill:#36E6B8;}
-	.st4{fill:#FF685F;}
-	.st5{fill:#4AFF4A;}
-	.st6{fill:#FF8800;}
-	.st7{fill:#EA2551;}
-	.st8{font-family:'Arial-BoldMT';}
-	.st9{font-size:14px;}
-	.st10{font-family:'Tahoma';}
-	.st11{font-size:12.0746px;}
+.st :active path {
+  fill: cornflowerblue;
+}
 
-.st0:hover::after{
-    fill: #FF8800;;
+.st0 {
+  fill: #3f2cc3;
+}
+.st1 {
+  fill: #ff4ac9;
+}
+.st2 {
+  fill: #002e57;
+}
+.st3 {
+  fill: #36e6b8;
+}
+.st4 {
+  fill: #ff685f;
+}
+.st5 {
+  fill: #4aff4a;
+}
+.st6 {
+  fill: #ff8800;
+}
+.st7 {
+  fill: #ea2551;
+}
+.st8 {
+  font-family: 'Arial-BoldMT';
+}
+.st9 {
+  font-size: 14px;
+}
+.st10 {
+  font-family: 'Tahoma';
+}
+.st11 {
+  font-size: 12.0746px;
+}
+
+.st0:hover::after {
+  fill: #ff8800;
 }
 
 .footer {
-    text-align: center;
-    font-size: small;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
-    color: rgb(255, 255, 255);
-    display: block;
-    position: absolute;
-    bottom: 0px;
-    margin: 0 auto;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-    }
+  text-align: center;
+  font-size: small;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
 
 .header {
   text-align: center;
-    font-size: 3rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
-    color: rgb(251, 251, 251);
-    display: block;
-    position: relative;
-    top: 50px;
-    
+  font-size: 3rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  color: rgb(251, 251, 251);
+  display: block;
+  position: relative;
+  top: 50px;
 }
 .navbar {
-  top: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
-
 
 ul {
   list-style-type: none;
-  margin: 5px;
   padding: 0;
-  overflow: hidden;
-  width: 100%;
-  position: relative;
-  height: 100px;
-  
-  
+  margin-bottom: 0;
 }
 
-li {
+ul.header-list {
+  display: flex;
+  justify-content: center;
+}
+
+li.header-list-item {
   float: left;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -115,38 +148,135 @@ li a {
   color: white;
 }
 
-
-
-iframe {
-  width: 800px;
-  height: 650px;
-  position: relative;
-  margin: 0 auto;
-  top: 50px;
-  }
-
 .main {
-  height: 100vh;
-  position: relative;
   display: flex;
   align-items: center;
-  flex-direction: column;
-  }
+}
 
-
-#inf {
-  position:relative;
-  width:40%;
+#youtube {
+  flex: 1;
   text-align: center;
-  top: 50px;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-weight: bold;
-  font-size: 1.5rem;
+}
 
-  
+#youtube iframe {
+  width: calc(100% - 40px);
+  height: 400px;
+}
+
+.alue-text-container {
+  flex: 1;
+}
+
+.alue-text-header {
+  text-align: center;
+  color: white;
+  letter-spacing: 4px;
+  font-weight: bold;
+  font-size: 48px;
+  margin: 0;
+}
+
+ul.alue-text-content {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 1em;
+  text-indent: -1em;
+  line-height: 32px;
+  font-size: 20px;
+  letter-spacing: 3px;
+}
+
+li.alue-text-item {
+  padding-left: 1em;
+  text-indent: -1em;
+}
+
+li.alue-text-item:before {
+  content: '✓';
+  padding-right: 5px;
 }
 
 .flag {
   width: 64px;
+}
+
+#inf {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 60px;
+}
+
+.gif-container {
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: auto;
+}
+
+.main-gif {
+  height: auto;
+  width: 650px;
+}
+.loading-gif {
+  width: 150px;
+}
+
+@media only screen and (max-width: 1200px) {
+  /*Tablets [601px -> 1200px]*/
+  .main-gif {
+    width: 600px;
+  }
+  .loading-gif {
+    width: 200px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  /*Laptops, Desktops [979px -> 992px]*/
+  .main-gif {
+    width: 500px;
+  }
+  .loading-gif {
+    width: 175px;
+  }
+  .main {
+    flex-direction: column;
+  }
+  #youtube {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  /*Big smartphones [426px -> 600px]*/
+  .main-gif {
+    width: 400px;
+  }
+  .loading-gif {
+    width: 150px;
+  }
+  .main {
+    flex-direction: column;
+  }
+  #youtube {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 425px) {
+  /*Small smartphones [325px -> 425px]*/
+  .main-gif {
+    width: 300px;
+    height: auto;
+  }
+  .loading-gif {
+    width: 100px;
+  }
+  .main {
+    flex-direction: column;
+  }
+  #youtube {
+    width: 100%;
+  }
 }
