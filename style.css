@@ -12,6 +12,7 @@ body {
   font-family: 'Roboto', sans-serif;
   height: 100vh;
   width: 100%;
+  color: white;
 }
 
 body::-webkit-scrollbar {
@@ -131,12 +132,17 @@ li.header-list-item {
   padding: 19px;
 }
 
-li a {
+li a.active {
   position: relative;
   top: 10px;
   text-decoration: none;
   font-size: xx-large;
   color: white;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
 }
 
 .main {
@@ -156,6 +162,7 @@ li a {
 
 .alue-text-container {
   flex: 1;
+  margin-right: 24px;
 }
 
 .alue-text-header {
@@ -239,6 +246,10 @@ li.alue-text-item:before {
   #youtube {
     width: 100%;
   }
+  .header {
+    font-size: 2rem;
+    margin-bottom: 0;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -255,6 +266,9 @@ li.alue-text-item:before {
   #youtube {
     width: 100%;
   }
+  .header {
+    font-size: 1.5rem;
+  }
 }
 @media only screen and (max-width: 425px) {
   /*Small smartphones [325px -> 425px]*/
@@ -270,5 +284,8 @@ li.alue-text-item:before {
   }
   #youtube {
     width: 100%;
+  }
+  .header {
+    font-size: 1.25rem;
   }
 }
